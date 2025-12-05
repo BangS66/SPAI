@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 67% 94%; /* #E6E6FA - Light Lavender */
+    --foreground: 271 100% 25%; /* #4B0082 - Deep Indigo */
+    --card: 240 67% 94%;
+    --card-foreground: 271 100% 25%;
+    --popover: 240 67% 94%;
+    --popover-foreground: 271 100% 25%;
+    --primary: 271 100% 25%; /* #4B0082 - Deep Indigo */
+    --primary-foreground: 240 67% 94%; /* Light Lavender for text on primary */
+    --secondary: 240 67% 90%; /* Slightly darker lavender */
+    --secondary-foreground: 271 100% 25%;
+    --muted: 240 67% 90%;
+    --muted-foreground: 271 100% 40%;
+    --accent: 274 100% 50%; /* #8F00FF - Vivid Violet */
+    --accent-foreground: 240 67% 94%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 67% 85%;
+    --input: 240 67% 85%;
+    --ring: 274 100% 50%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 271 100% 10%; /* Darker Deep Indigo */
+    --foreground: 240 67% 94%; /* Light Lavender */
+    --card: 271 100% 12%;
+    --card-foreground: 240 67% 94%;
+    --popover: 271 100% 10%;
+    --popover-foreground: 240 67% 94%;
+    --primary: 274 100% 60%; /* Brighter Vivid Violet for dark mode */
+    --primary-foreground: 271 100% 10%;
+    --secondary: 271 100% 20%;
+    --secondary-foreground: 240 67% 94%;
+    --muted: 271 100% 20%;
+    --muted-foreground: 240 67% 85%;
+    --accent: 274 100% 50%; /* Vivid Violet */
+    --accent-foreground: 240 67% 94%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 271 100% 20%;
+    --input: 271 100% 20%;
+    --ring: 274 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
