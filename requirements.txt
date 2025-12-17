@@ -1,0 +1,9 @@
+PySide6
+Pillow
+imagehash
+opencv-python
+numpy
+mediapipe
+scipy
+rawpy
+piexif
